@@ -5,7 +5,7 @@ body {
 }
 #top-bg {
   position: absolute;
-  z-index: 0;
+  z-index: 1;
   width: 100%;
   height: 5em;
   margin-bottom: 0;
@@ -13,18 +13,26 @@ body {
   background-image: url(images/background-texture.png);
   background-position: center;
 }
+
 #fixed-bar {
   position: fixed;
-  display: inline;
+  display: block;
   width: 100%;
   background-image: url(images/background-texture.png);
   background-position: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
-  z-index: 3
+  z-index: 3;
+  /*border: 1px solid black;*/
+}
+main {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
 }
 #lead-container {
+  /*flex: 2 1 30%;*/
   z-index: 1;
   position: relative;
   background: transparent;
@@ -34,14 +42,13 @@ body {
   width: 100%;
   margin-bottom: 0;
 }
-#index-lead {
+#index-header {
   color: white;
   font-variant: small-caps;
   font-style: italic;
   font-size: 1em;
   font-family: 'Cabin';
   text-shadow: 3px 3px 2px black, 3px 3px 4px gray;
-  width: content;
   position: absolute;
   top: 2.5rem;
   margin-left: auto;
@@ -71,16 +78,25 @@ body {
   font-weight: bold;
   font-family: 'Georgia';
   margin: 0;
-  width: auto;
-  z-index: 0;
+  z-index: 1;
   right: 0;
   top: 6.9rem;
 }
 .topmenu li {
   display: inline-block;
-  padding-right: 3em;
-  padding-left: 3em;
-  border: 1px solid;
+  padding: .2em 3em .2em 3em;
+  border: .01em solid rgba(40, 100, 100, 0.7);
+  border-radius: .5em;
+  background-image: linear-gradient(to bottom, rgba(60, 100, 100, 1.0), rgba(180, 255, 255, 0.3))
+  /*background-color: rgba(60, 100, 100, .4);*/
+}
+.topmenu li:hover {
+  background-image: linear-gradient(to bottom, rgba(60, 100, 100, 1.0), rgba(130, 255, 255, 0.6));
+  box-shadow: .2em .2em 1em rgba(0, 50, 50, 0.7);
+}
+.toplink:hover {
+  color: rgba(255, 255, 255, 1.0);
+  text-shadow: .1em .1em 1em black;
 }
 .topmenu {
   margin: 1em;
@@ -96,11 +112,10 @@ body {
 #lead-image {
   display: table-cell;
   width: 100%;
-  float: left;
   border: .1em dotted #2F4F4F;
   border-radius: .5em
 }
-#index-caption {
+.photo-caption {
   display: table-caption;
   caption-side: bottom;
   font-family: 'Open Sans';
@@ -118,20 +133,20 @@ body {
   border-radius: .5em
   /*float: right;*/
 }
-/*#index-caption {
-  position: absolute;
-  float: right;
-  display: inline-block;
-  width: 20%;
-  border: 1px solid;
-  margin-top: 3em;
-  margin-bottom: 3em;
-  align-self: center;
-}*/
-#index-caption p {
+
+.photo-caption p {
   padding: 0 1em 0 1em;
 }
-#index-text {
+.text {
   position: relative;
-
+  margin: .75em auto;
+  width: 85%;
+  text-align: justify;
+  /*border: 1px solid black;*/
+}
+#index-text p:first-of-type {
+  padding-top: 1em;
+}
+#index-text p:last-of-type {
+  padding-bottom: 2em;
 }
