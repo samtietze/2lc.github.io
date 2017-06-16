@@ -1,3 +1,21 @@
 body {
   background-color: blue;
+  background-image: url("images/tentacle-left.jpg"), url("images/tentacle-right.jpg");
+  background-repeat: repeat-y;
+  background-position: top left, top right;
+  background-size: auto, auto;
+  background-size: 50.5%, 50.5%;
+}
+
+#lead-image-container {
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid;
+  width: 80%;
+}
+#lead-image {
+  border: 5px dashed red;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
