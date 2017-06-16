@@ -1,49 +1,93 @@
 body {
-  /*background-color: blue;*/
-/*  background-image: url("images/tentacle-left.jpg"), url("images/tentacle-right.jpg");
-  background-repeat: repeat-y;
-  background-position: top left, top right;
-  background-size: auto, auto;
-  background-size: 50.5%, 50.5%;*/
-  /*background-image: url(images/marsshot.png);*/
-  /*background-size: 100%;*/
+  margin: 0;
+  background-color: gray;
 }
-
-#lead-image-container {
+#top-bg {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 5em;
+  margin-bottom: 0;
+  top: 3em;
+  background-image: url(images/background-texture.png);
+}
+#fixed-bar {
+  position: fixed;
+  display: inline;
+  width: 100%;
+  background-image: url(images/background-texture.png);
   margin-left: auto;
   margin-right: auto;
-  border: 5px solid;
-  width: 80%;
+  margin-top: 0;
+  z-index: 3
+}
+#lead-container {
+  z-index: 1;
+  position: relative;
+  background: transparent;
+  text-align: left;
+  display: inline-block;
+  padding: 0;
+  width: 100%;
+  margin-bottom: 0;
+}
+#index-lead {
+  color: white;
+  font-variant: small-caps;
+  font-size: 1em;
+  font-family: 'Cabin';
+  text-shadow: 3px 3px 2px black, 3px 3px 4px gray;
+  width: content;
+  position: absolute;
+  top: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+#crewtitle {
+  font-variant: small-caps;
+  font-family: 'Cabin';
+  text-shadow: 2px 2px 2px black;
+  font-size: 3em;
+  color: white;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 7.5em;
+  margin-top: 4rem;
+  margin-bottom: 0;
+  z-index: 1;
+}
+#index-tagline {
+  position: absolute;
+  width: content;
+  color: red;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: 'Georgia';
+  margin: 0;
+  width: auto;
+  z-index: 0;
+  right: 0;
+  top: 6.9rem;
+}
+.topmenu li {
+  display: inline-block;
+  padding-right: 3em;
+  padding-left: 3em;
+  border: 1px solid;
+}
+.topmenu {
+  margin: 1em;
+  text-align: center;
+}
+#lead-image-container {
+
 }
 #lead-image {
-  border: 5px dashed red;
+  /*border: 5px dashed red;*/
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-}
-#index-lead {
-  font-variant: small-caps;
-  color: white;
-  text-shadow: 5px 5px 3px gray, 5px 5px 4px gray;
-  /*padding: .5em 1em 1em;*/
-}
-#lead-container {
-  /*background-image: url(images/6754.png);
-  background-position: center;*/
-  /*position: relative;*/
-  /*height: 5em;*/
-  /*top: -20px;*/
-  /*border: 1px solid;*/
-  background-image: url(images/background-texture.png);
-}
-#index-tagline {
-  color: red;
-  font-size: 2.5em;
-  font-weight: bold;
-  text-shadow: 5px 5px 2px black;
-  position: relative;
-  border: 1px solid red;
-  width: 150px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 1em;
 }
