@@ -1,3 +1,178 @@
 body {
-  background-color: blue;
+  margin: 0;
+  background-color: gray;
+  font-weight: lighter;
+  font-family: 'Open Sans'
+}
+.top-bg {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 8em;
+  margin-bottom: 0;
+  top: 0;
+  background-image: url(images/background-texture.png);
+  background-position: center;
+}
+
+#fixed-bar {
+  position: fixed;
+  display: block;
+  width: 100%;
+  background-image: url(images/background-texture.png);
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  z-index: 3;
+}
+#lead-container {
+  z-index: 1;
+  position: relative;
+  background: transparent;
+  text-align: left;
+  display: inline-block;
+  padding: 0;
+  width: 100%;
+  margin-bottom: 0;
+}
+#index-header {
+  color: white;
+  font-variant: small-caps;
+  font-style: italic;
+  font-size: 1em;
+  font-family: 'Cabin';
+  text-shadow: 3px 3px 2px black, 3px 3px 4px gray;
+  position: absolute;
+  top: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+#pagetitle {
+  font-variant: small-caps;
+  font-weight: lighter;
+  font-family: 'Cabin';
+  text-shadow: 2px 2px 2px black;
+  font-size: 3em;
+  color: white;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 6.35em;
+  margin-top: 4rem;
+  margin-bottom: 0;
+  z-index: 1;
+}
+#index-tagline {
+  position: absolute;
+  width: content;
+  color: red;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: 'Georgia';
+  margin: 0;
+  z-index: 1;
+  right: 0;
+  top: 6.9rem;
+}
+.topmenu li {
+  display: inline-block;
+  padding: .2em 3em .2em 3em;
+  border: .01em solid rgba(40, 100, 100, 0.7);
+  border-radius: .5em;
+  background-image: linear-gradient(to bottom, rgba(60, 100, 100, 1.0), rgba(180, 255, 255, 0.3))
+  /*background-color: rgba(60, 100, 100, .4);*/
+}
+.topmenu li:hover {
+  background-image: linear-gradient(to bottom, rgba(60, 100, 100, 1.0), rgba(130, 255, 255, 0.6));
+  box-shadow: .2em .2em 1em rgba(0, 50, 50, 0.7);
+  color: rgba(255, 255, 255, 1.0);
+  text-shadow: .1em .1em 1em black;
+}
+.toplink:visited {
+  color: rgba(20, 30, 30, 0.1);
+}
+.topmenu {
+  margin: 1em;
+  text-align: center;
+}
+.lead-image-container {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+  padding-top: .75em;
+}
+.lead-image {
+  display: table-cell;
+  width: 100%;
+  border: .1em dotted #2F4F4F;
+  border-radius: .5em
+}
+.photo-caption {
+  display: table-caption;
+  caption-side: bottom;
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-size: .9rem;
+  width: 80%;
+  margin: .25em auto;
+  text-align: justify;
+  padding: .5em 10%;
+  background-color: rgba(60, 100, 100, .5);
+  box-shadow: .25em .25em 2em black;
+  border-radius: .5em;
+  color: rgba(200, 200, 200, 1.0);
+}
+
+.photo-caption p {
+  padding: 0 1em 0 1em;
+}
+.text {
+  position: relative;
+  margin: .75em auto;
+  width: 85%;
+  text-align: justify;
+  /*border: 1px solid black;*/
+}
+#index-text p:first-of-type {
+  padding-top: 1em;
+}
+#index-text p:last-of-type {
+  padding-bottom: 2em;
+}
+#crewtop {
+  background: transparent;
+  background-image: url(images/background-texture.png);
+  font-variant: small-caps;
+  font-weight: lighter;
+  font-family: 'Cabin';
+  text-shadow: 2px 2px 2px black;
+  font-size: 2.5em;
+  color: white;
+  margin: auto;
+  padding: 1em;
+  z-index: 2;
+  position: relative;
+}
+.crewmember {
+  border-top: .1em;
+  border-style: solid;
+  border-image: linear-gradient(to right, rgba(20, 100, 100, 0.5), rgba(255, 255, 255, 1.0));
+  border-image-slice: 1 0 0 0;
+  /*border-collapse:*/
+  font-family: 'Cabin';
+  font-weight: bold;
+  font-size: 2em;
+  margin: 1.5em 3em .5em 3em;
+}
+
+.crewquote {
+  font-size: 1.25em;
+  padding: 1em;
+  color: white;
+}
+footer {
+  margin-bottom: 1em;
 }
