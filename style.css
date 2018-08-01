@@ -1,0 +1,34 @@
+.dice-roller {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.dice-button-container {
+  background-color: #e2e2e2;
+  border: 1px solid #efefef;
+  height: 80%;
+  width: 20%;
+}
+
+.die {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+.die-header {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.die-header img {
+  height: 44px;
+  width: 44px;
+}
+
+.die-header h2 {
+  margin: 0;
+}

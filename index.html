@@ -1,49 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>The Official 2LC</title>
-  <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Zoid Dice Roller</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div id="fixed-bar">
-    <nav class="topmenu">
-      <ul>
-        <a class="toplink" href="thecrew.html"><li class="menuitem">Who We Are</li></a>
-        <a class="toplink" href="games.html"><li class="menuitem">What We Play</li></a>
-      </ul>
-    </nav>
+  <div class="dice-roller">
+    <div class="dice-button-container">
+      <div class="die">
+        <div class="die-header">
+          <img src="images/d4.png" alt="d4 die">
+          <h2>D4</h2>
+        </div>
+        <div class="dice-input">
+          <label for="d4-number">Number of dice:</label>
+          <input type="text" name="d4-number" id="d4-number">
+        </div>
+      </div>
+      <div class="die">
+        <div class="die-header">
+          <img src="images/d6.png" alt="d6 die">
+          <h2>D6</h2>
+        </div>
+        <div class="dice-input">
+          <label for="d6-number">Number of dice:</label>
+          <input type="text" name="d6-number" id="d6-number">
+        </div>
+      </div>
+      <div class="die">
+        <div class="die-header">
+          <img src="images/d8.png" alt="d8 die">
+          <h2>D8</h2>
+        </div>
+        <div class="dice-input">
+          <label for="d8-number">Number of dice:</label>
+          <input type="text" name="d8-number" id="d8-number">
+        </div>
+      </div>
+      <div class="die">
+        <div class="die-header">
+          <img src="images/d10.png" alt="d10 die">
+          <h2>D10</h2>
+        </div>
+        <div class="dice-input">
+          <label for="d10-number">Number of dice:</label>
+          <input type="text" name="d10-number" id="d10-number">
+        </div>
+      </div>
+      <div class="die">
+        <div class="die-header">
+          <img src="images/d12.png" alt="d12 die">
+          <h2>D12</h2>
+        </div>
+        <div class="dice-input">
+          <label for="d12-number">Number of dice:</label>
+          <input type="text" name="d12-number" id="d12-number">
+        </div>
+      </div>
+      <div class="die">
+        <div class="die-header">
+          <img src="images/d20.png" alt="d20 die">
+          <h2>D20</h2>
+        </div>
+        <div class="dice-input">
+          <label for="d20-number">Number of dice:</label>
+          <input type="text" name="d20-number" id="d20-number">
+        </div>
+      </div>
+    </div>
+    <div class="app-container">
+      App here
+    </div>
   </div>
-  <div id="minibar">
-    <nav>
-      <ul>
-        <li><a href="thecrew.html">🤓🤓🤓🤓</a></li>
-        <li><a href="games.html">🎮👾🎮</a></li>
-      </ul>
-    </nav>
-  </div>
-  <!-- <div class="top-bg"></div> -->
-  <main>
-    <div id="lead-container">
-      <h2 id="index-header">You've stumbled upon the 90s era website for</h2>
-      <h1 id="pagetitle">the 2 Live Crew!</h1>
-      <p id="index-tagline"><em>Bully for you!</em></p>
-    </div>
-    <div class="lead-image-container">
-    <!-- "<figcaption>" also would have worked here? -->
-      <img class="lead-image" src="images/2lcgroup.jpg" alt="2LCrew">
-      <p class="photo-caption">The stars aligned over Chicago one fateful week, allowing an unemployed Skippy, an unemployed Sam, and an unemployed John to enjoy liquors and foods in Chicago.</p>
-    </div>
-    <div id="index-text">
-      <p class="text">We are a hard hitting, slow moving group of dudes who waste a lot of time strategizing about games and ordering little platoons of computer servants to do our bidding. For more details about these games, please see the above link. For more details about this lowly crew, please see the above link.</p>
-      <p class="text">The 2 Live Crew does not demand anything of its members.</p>
-      <p class="text">The 2 Live Crew does not receive a tithe from its members.</p>
-      <p class="text">The 2 Live Crew does not hold any regular meetings.</p>
-      <p class="text">The 2 Live Crew has only spent one evening in the same room.</p>
-      <p class="text">The 2 Live Crew is generally unreliable in a pinch.</p>
-      <p class="text">Skippy did help that one guy move that one time at 8 AM though.</p>
-    </div>
-  </main>
 </body>
+
 </html>
