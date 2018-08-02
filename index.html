@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <title>Zoid Dice Roller</title>
   <link rel="stylesheet" href="style.css">
+  <script src="../node_modules/zoid/dist/zoid.js"></script>
+  <script src="https://localhost:5000"></script>
 </head>
 
 <body>
@@ -77,9 +79,12 @@
         </div>
       </div>
     </div>
-    <div class="app-container">
-      App here
-    </div>
+    <div id="app-container"></div>
+    <script type="text/babel">
+      ZoidComponent.render({
+        test: "this is a test xprop"
+      }, '#app-container');
+    </script>
   </div>
 </body>
 
